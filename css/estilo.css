@@ -467,16 +467,36 @@ footer h3 {
     font-family: "Quicksand", sans-serif;
     line-height: 1.5;
   }
+  h3 {
+    font-size: 2rem;
+  }
   /* NAVEGACION */
   header {
     width: 100%;
   }
+
   nav {
-    gap: 10px;
+    background-color: #fffff2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 30%);
+    grid-template-areas:
+      "nav1"
+      "nav2";
+    gap: 25px;
+    justify-items: center;
+
+    padding: 10px;
+  }
+  .nav1 {
+    padding-left: 20px;
   }
   .nav2 {
-    justify-content: center;
     font-size: 17.5px;
+    justify-content: center;
+  }
+  nav ul a {
+    margin: 3px;
   }
 
   /* ENCABEZADO */
@@ -503,15 +523,18 @@ footer h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 20px;
   }
   .nosotros {
     width: 100%;
+    text-align: center;
+    background-color: #ff6961;
+    padding: 1rem;
+    border-radius: 20px;
   }
   .imagenes2 {
-    width: 340px;
-    height: 250px;
-    margin-top: 30px;
-    padding: 10px;
+    width: 100%;
+    height: 8%;
   }
 
   /* NUESTROS TRABAJOS */
@@ -528,19 +551,24 @@ footer h3 {
 
   /* SERVICIOS */
   table {
-    width: 65%;
+    width: 55%;
     text-align: center;
     justify-content: center;
-    border-spacing: 35px;
+    border-spacing: 10px;
+    padding-right: 10px;
   }
 
+  .ser2 {
+    width: 85%;
+    justify-content: center;
+  }
   td img {
     width: 230px;
     height: 130px;
     border: 2px dashed black;
     padding: 0.5rem;
     border-radius: 50%;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 
   /* CONTACTO */
@@ -558,12 +586,15 @@ footer h3 {
     font-family: "Caveat", cursive;
     font-size: 1.2rem;
   }
+  textarea {
+    width: 100%;
+    height: ;
+  }
   .input {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 25px;
     grid-template-areas: "enviar borrar";
-    table-layout: fixed;
     justify-items: center;
   }
   .enviar {
