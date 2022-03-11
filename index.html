@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./css/estilo.css">
   <link rel="shortcut icon" href="./assets/Multimedia/lyg pequeño.png">
   <title>Love and gifts</title>
@@ -15,9 +16,9 @@
 <body>
   <header class="header" >
     <nav>
-      <div class="nav1">
+      <div class="nav1" >
       <a href="./index.html"><img  src="./assets/Multimedia/lyg grande.png" alt=""width="70px"></a> 
-    </div>
+     </div>
       <ul class="nav2">
         <li> <a href="./index.html">Inicio</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
@@ -37,10 +38,12 @@
       
   </header>
   <section class="titulo">
-  <h1>Love and gifts</h1>
+  <h1 class="animate__animated animate__backInLeft">Love and gifts</h1>
   </section>
 
    <!--Cierre del encabezado-->
+
+
    <!--Información del sitio web-->
   <main class="main">   
     <section class="imagenes1">
@@ -51,19 +54,19 @@
   </main>
   <section >
 
-    <h2 id="nosotros"  class="text1">Quiénes somos</h2>
+    <h2 id="nosotros"  class="text1 animate__animated wow animate__pulse">Quiénes somos</h2>
    <article class="sec1" >
-     <div class="nosotros">
+     <div class="nosotros ">
       
        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit fuga illo nihil porro cumque expedita voluptates dolorem rerum enim pariatur, id impedit quasi. Quas accusantium aspernatur quae vitae ipsum minima architecto quisquam eveniet animi veniam est quibusdam sint optio quidem, facere itaque deserunt dolore excepturi possimus a! Sint voluptas ducimus repellendus quas placeat sapiente optio non temporibus enim assumenda corporis numquam neque cumque fugit aperiam impedit nihil minus vel nobis quod facilis ullam, eveniet recusandae ratione? Libero expedita aperiam voluptatum repellat, rem quas deleniti obcaecati impedit culpa ducimus officia ut quibusdam qui dolorum harum saepe consequuntur, doloremque perspiciatis. Perspiciatis!
        </p>
      </div>
-       <img src="./assets/Multimedia/img5.jpg" alt=""  class="imagenes2">
+       <img src="./assets/Multimedia/img5.jpg" alt=""  class="imagenes2 wow animate__animated animate__backInRight">
     </article>
   
     <article class= "sec2">
-      <h2>Qué nos diferencia</h2>
-      <div class=" diferencias">
+      <h2 class="animate__animated wow animate__pulse">Qué nos diferencia</h2>
+      <div class="diferencias animate animated wow animate__bounce">
         
         <div class="calidad" >
           <img src="./assets/Multimedia/calidad.png" alt="icono de calidad">
@@ -83,7 +86,7 @@
   </section>
   
   <section id="nuestrosTrabajos" >
-    <h2> Nuestros trabajos</h2>
+    <h2 class="animate__animated wow animate__pulse"> Nuestros trabajos</h2>
    <article class="sec3">
      <div class="trabajos cero"><img src="./assets/Multimedia/img1.jpg" alt=""></div>
      <div class="trabajos uno"><img src="./assets/Multimedia/img2.jpg" alt=""></div>
@@ -96,13 +99,18 @@
      <div class="trabajos ocho"><img src="./assets/Multimedia/img9.jpg" alt=""></div>
    </article>
  </section>
+
+ <script src="./js/wow.min (1).js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 <!--pie de pagina-->
 <footer class="footer">
   <div >
     <img src="./assets/Multimedia/lyg grande.png" alt="" class="logo-footer">
   </div>
-  <div>
+  <div class=" wow animate__animated animate__pulse">
     <h3>"Los mejores regalos vienen del corazón"</h3>
   </div>
   </div>

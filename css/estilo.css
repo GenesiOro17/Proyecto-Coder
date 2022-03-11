@@ -25,6 +25,32 @@ nav {
   justify-content: start;
   width: 100px;
 }
+.nav1:hover {
+  animation-name: izquierda;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes izquierda {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 10px;
+  }
+  50% {
+    left: 20px;
+  }
+  75% {
+    left: 10px;
+    opacity: 0.8;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 .nav2 {
   grid-area: nav2;
   gap: 20px;
@@ -195,11 +221,7 @@ td img {
 .trabajos img:hover {
   opacity: 2;
   border: solid white;
-}
-
-.trabajos img:hover {
-  opacity: 2;
-  border: solid white;
+  transform: scale(1.1);
 }
 
 /* CONTACTO */
@@ -247,6 +269,13 @@ footer div img {
 footer h3 {
   color: #ffffff;
   margin-top: 30px;
+}
+.logo-footer:hover {
+  animation-name: izquierda;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 /* MEDIA QUERRIES TABLET */
@@ -588,7 +617,6 @@ footer h3 {
   }
   textarea {
     width: 100%;
-    height: ;
   }
   .input {
     display: grid;
