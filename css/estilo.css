@@ -13,7 +13,7 @@ body {
 nav {
   background-color: #fffff2;
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
   grid-template-areas: "nav1 nav2 nav2";
   gap: 10%;
@@ -185,6 +185,7 @@ p {
 /* SERVICIOS */
 table {
   display: flex;
+
   text-align: center;
   margin: 1rem 7rem;
   justify-content: center;
@@ -198,6 +199,11 @@ td img {
   padding: 0.5rem;
   border-radius: 50%;
   margin-left: 3rem;
+  transition: 1s ease;
+}
+td img:hover {
+  width: 310px;
+  height: 210px;
 }
 .ser2 {
   display: none;
@@ -214,14 +220,14 @@ td img {
 .trabajos img {
   width: 300px;
   height: 400px;
-  margin: 1.6rem 1.6rem;
+  margin: 1.8rem;
   opacity: 0.8;
   border-radius: 20px;
 }
 .trabajos img:hover {
   opacity: 2;
   border: solid white;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* CONTACTO */
@@ -278,8 +284,8 @@ footer h3 {
   animation-timing-function: linear;
 }
 
-/* MEDIA QUERRIES TABLET */
-@media screen and (max-width: 1200px) {
+/*****************MEDIA QUERRIES TABLET**************************/
+@media screen and (max-width: 1100px) {
   /* FUENTES */
   h1 {
     font-size: 4.5rem;
@@ -292,7 +298,7 @@ footer h3 {
   nav {
     background-color: #fffff2;
     display: grid;
-    grid-template-columns: 95%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(2, 40%);
     grid-template-areas:
       "nav1"
@@ -328,6 +334,11 @@ footer h3 {
     height: 200px;
     padding: 6%;
   }
+  /* CARROUSEL */
+  .imagenes1 img {
+    width: 30%;
+    height: 50%;
+  }
   /* QUIENES SOMOS */
   .sec1 {
     display: flex;
@@ -345,6 +356,7 @@ footer h3 {
     width: 400px;
     height: 250px;
     margin-top: 30px;
+    margin: 20px auto;
   }
   /* QUE NOS DIFERENCIA */
   .sec2 {
@@ -424,11 +436,13 @@ footer h3 {
     width: 95px;
     margin-bottom: 5px;
   }
+
   /* SERVICIOS */
   table {
+    margin: 0px;
+    justify-content: center;
     text-align: center;
     justify-content: center;
-    border-spacing: 35px;
   }
   table tr td .text {
     display: none;
@@ -436,18 +450,20 @@ footer h3 {
   .ser2 {
     display: flex;
     background-color: #fffff2;
-    padding: 30px;
+    padding: 10px 11%;
+  }
+  .ser2 h3 {
+    padding-top: 30px;
   }
   .ser1 {
     display: none;
   }
   td img {
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     border: 2px dashed black;
     padding: 0.5rem;
     border-radius: 50%;
-    margin-left: 3rem;
   }
 
   /* CONTACTO */
@@ -482,12 +498,10 @@ footer h3 {
     grid-area: borrar;
   }
 }
+/*****************FINAL MEDIA QUERRIES TABLET*********************/
 
-/* MEDIA QUERRIES MOBILE */
+/*****************MEDIA QUERRIES MOBILE**************************/
 @media screen and (max-width: 550px) {
-  body {
-    width: 100%;
-  }
   /* FUENTES */
   h1 {
     font-size: 4rem;
@@ -508,7 +522,7 @@ footer h3 {
     background-color: #fffff2;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       "nav1"
       "nav2";
@@ -567,10 +581,30 @@ footer h3 {
   }
 
   /* NUESTROS TRABAJOS */
+  .sec3 {
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    padding: 5%;
+  }
 
   .trabajos img {
-    width: 150px;
-    height: 250px;
+    width: 90%;
+    height: 80%;
+    margin: 10px;
+    opacity: 2;
+    border-radius: 20px;
+  }
+
+  .trabajos img:hover {
+    transform: none;
+  }
+
+  .cinco,
+  .seis,
+  .siete,
+  .ocho {
+    display: none;
   }
 
   /* FOOTER */
@@ -580,24 +614,32 @@ footer h3 {
 
   /* SERVICIOS */
   table {
-    width: 55%;
+    width: 100%;
     text-align: center;
     justify-content: center;
-    border-spacing: 10px;
-    padding-right: 10px;
+    padding: 1rem;
+    border-spacing: 20px;
   }
-
   .ser2 {
-    width: 85%;
-    justify-content: center;
+    background: #fdfdfd;
+    padding: 6px 5%;
+    text-align: center;
+  }
+  .ser2 h3 {
+    margin-right: 10px;
   }
   td img {
-    width: 230px;
-    height: 130px;
+    width: 150px;
+    height: 120px;
     border: 2px dashed black;
     padding: 0.5rem;
     border-radius: 50%;
-    margin-left: 1rem;
+    margin-left: 0;
+    transition: none;
+  }
+  td img:hover {
+    width: 150px;
+    height: 120px;
   }
 
   /* CONTACTO */
@@ -632,3 +674,4 @@ footer h3 {
     grid-area: borrar;
   }
 }
+/*****************FINAL MEDIA QUERRIES MOBILE**********************/
