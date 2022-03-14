@@ -510,8 +510,13 @@ footer h3 {
     font-family: "Quicksand", sans-serif;
     line-height: 1.5;
   }
+  h2 {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
   h3 {
     font-size: 2rem;
+    padding: 10px;
   }
   /* NAVEGACION */
   header {
