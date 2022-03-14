@@ -18,6 +18,10 @@ nav {
   grid-template-areas: "nav1 nav2 nav2";
   gap: 10%;
 }
+nav ul a:hover {
+  color: #ff6961;
+  font-weight: bold;
+}
 .nav1 {
   grid-area: nav1;
   padding-left: 40px;
@@ -69,11 +73,6 @@ nav ul a {
   padding-top: 5px;
   padding-bottom: 5px;
   display: block;
-}
-
-nav ul a:hover {
-  color: #ff6961;
-  font-weight: bold;
 }
 
 ul ul {
