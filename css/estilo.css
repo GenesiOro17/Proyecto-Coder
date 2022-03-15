@@ -12,6 +12,8 @@ body {
 /* BARRA DE NAVEGACION */
 nav {
   background-color: #fffff2;
+  color: #c63637;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
@@ -22,12 +24,9 @@ nav ul a:hover {
   color: #ff6961;
   font-weight: bold;
 }
+
 .nav1 {
   grid-area: nav1;
-  padding-left: 40px;
-  padding-top: 10px;
-  justify-content: start;
-  width: 100px;
 }
 .nav1:hover {
   animation-name: izquierda;
@@ -184,7 +183,6 @@ p {
 /* SERVICIOS */
 table {
   display: flex;
-
   text-align: center;
   margin: 1rem 7rem;
   justify-content: center;
