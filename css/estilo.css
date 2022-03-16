@@ -6,7 +6,7 @@
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
   text-align: center;
-  background-color: #ffbfaf;
+  background-color: #ffffff;
 }
 
 /* BARRA DE NAVEGACION */
@@ -14,14 +14,14 @@ nav {
   background-color: #fffff2;
   color: #c63637;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
   grid-template-areas: "nav1 nav2 nav2";
-  gap: 10%;
+  gap: 10%; */
 }
 nav ul a:hover {
-  color: #ff6961;
+  color: #c22f28;
   font-weight: bold;
 }
 
@@ -85,52 +85,53 @@ ul li:hover ul {
   display: block;
   background-color: rgb(255, 250, 250);
 }
+
+/* CIERRE DE BARRA DE NAVEGACION */
+
 /* FUENTES */
 h1 {
   font-family: "Caveat", cursive;
   font-size: 6rem;
-  color: #ffffff;
+  color: #000000;
   padding: 2rem;
 }
 h2 {
   font-family: "Caveat", cursive;
   font-size: 3.5rem;
-  color: #fdfdfd;
+  color: #000000;
   margin-top: 1rem;
 }
 h3 {
   font-family: "Caveat", cursive;
   font-size: 2.5rem;
-  color: #771212;
+  color: #522323;
   text-decoration: solid;
 }
 p {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
 }
+/* CIERRE DE FUENTES */
 
 /* ENCABEZADO */
 .titulo {
-  background-image: url(https://estaticos-cdn.prensaiberica.es/clip/9ecbab62-23a9-4ad8-8f7a-e643dddd0324_16-9-aspect-ratio_default_0.jpg);
-  background-repeat: repeat;
+  /* background-image: url(https://estaticos-cdn.prensaiberica.es/clip/9ecbab62-23a9-4ad8-8f7a-e643dddd0324_16-9-aspect-ratio_default_0.jpg);
+  background-repeat: repeat; */
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   justify-content: center;
 }
 .titulo h1 {
   color: black;
 }
-
-.encabezado {
-  padding: 2rem;
+.nombre {
+  background-color: #771212;
+}
+.nombre h1 {
+  color: #ffff;
 }
 
-/* CARROUSEL-MAIN */
-.imagenes1 {
-  display: flex;
-  justify-content: center;
-  background-color: #c63637;
-  height: 200px;
+.encabezado {
   padding: 2rem;
 }
 
@@ -143,10 +144,11 @@ p {
 }
 .nosotros {
   width: 40%;
+  color: white;
   text-align: center;
-  background-color: #ff6961;
+  background-color: #000000;
   padding: 1rem;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .imagenes2 {
   width: 500px;
@@ -157,7 +159,7 @@ p {
 .sec2 {
   display: block;
   justify-content: center;
-  background-color: #ff6961;
+  background-color: #d8b6a4;
   height: 430px;
   padding: 1rem;
   margin: 20px auto;
@@ -260,7 +262,7 @@ form legend {
 /* FOOTER */
 footer {
   display: flex;
-  background-color: #c63637;
+  background-color: #771212;
   justify-content: space-between;
   height: auto;
   margin-top: 7rem;
@@ -425,8 +427,9 @@ footer h3 {
   }
 
   /* FOOTER */
-  footer {
+  .footer {
     flex-direction: column;
+    background-color: #771212;
     height: auto;
   }
   .logo-footer {
