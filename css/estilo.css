@@ -186,15 +186,13 @@ p {
 }
 
 /* SERVICIOS */
-.table {
-  display: flex;
+table {
   text-align: center;
   margin: 1rem 7rem;
   justify-content: center;
   padding: 1rem;
-  border-spacing: 4rem;
 }
-.imagenes-ser {
+td img {
   width: 300px;
   height: 200px;
   border: 2px dashed black;
