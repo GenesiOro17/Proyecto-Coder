@@ -17,16 +17,16 @@
 
     <!-- mi hoja de estilos -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="shortcut icon" href="../assets/Multimedia/lyg pequeño.png">
-    <title>Contacto</title>
+    <link rel="shortcut icon" href="../assets/Multimedia/lyg vino pequeño.png">
+    <title>Contáctanos</title>
 </head>
-<body>
+<body class="fondo">
 
   <header class="header" >
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
       
-              <a class="navbar-brand nav1" href="../index.html"><img  src="../assets/Multimedia/lyg grande.png" alt=""width="70px"></a>
+              <a class="navbar-brand nav1" href="../index.html"><img  src="../assets/Multimedia/lyg vino grande.png" alt=""width="70px"></a>
       
              
       
@@ -69,61 +69,51 @@
 
 
   <main>
-    <section class="contacto">
-     <h1 class=" wow animate__animated animate__backInLeft">Contacto</h1>
-     <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ut harum cumque enim necessitatibus consequuntur voluptatum ducimus nostrum ex possimus!</h3>
-      <form action="">
-       <legend>Formulario</legend>
-       <div>
-          <label for="Nombre">Nombre *</label>
-          <input type="Nombre" name="nombre" id="nombre" placeholder="Maria">
-        </div>
-
-        <div>
-          <label for="Apellido">Apellido *</label>
-          <input type="Apellido" id="Apellido" placeholder="Suarez">
-        </div>
-        
-       <div>
-         <label for="email">Email*</label>
-          <input type="email" name="email" id="email" placeholder="tumail@gmail.com" required>
-        </div>
-        
-        <div>
-          <label for="Ciudad">Ciudad *</label> 
-          <input type="text" name="text" placeholder="Lima" required>
-        </div>
-        
-        <div>
-         <label for="sexo">Sexo</label>
-          <select name="sexo" id="sexo">
-            <option value="Femenino">Femenino</option>
-            <option value="Masculino">Masculino</option>
-          </select>
-        </div>
-        
-        <div>
-         <label for="comentario">¿Qué te pareció nuestro contenido?</label>
-          <br>
-         <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-        </div>
-        <div class="input">
-        
-          <input type="submit" value="Enviar" class="enviar" >
-          <input type="reset" value="Borrar" class="borrar" >
-       </div>
-      </form> -->
-
-    </section>
     
+    <h1 class=" wow animate__animated animate__backInLeft">¡Contáctanos!</h1>
+    <section class=" container mt-5 contacto">
+     <form class="row g-3 text-white" action="">
+     <div class="col-md-6 m-auto">
+      <label for="nombre" class="form-label">Nombre *</label>
+      <input type="nombre" class="form-control bg-dark text-white" id="nombre" placeholder="Maria">
+    </div>
+    <div class="col-md-6 m-auto">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="apellido" class="form-control bg-black text-white" id="apellido" placeholder="Suarez">
+    </div>
+    <div class="col-md-8 m-auto">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control bg-black text-white" id="email" placeholder="@tumail.com">
+    </div>
+    <div class="col-md-4 m-auto">
+      <label for="phoneNumber" class="form-label">Número de teléfono (opcional)</label>
+      <input type="text" class="form-control bg-black text-white" id="phoneNomber" placeholder="910839376">
+    </div>
+    <div class="col-md-6 m-auto">
+      <label for="ciudad" class="form-label">¿Desde que ciudad nos contactas?</label>
+      <input type="text" class="form-control bg-black text-white" id="contacto" placeholder="Lima">
+    </div>
+    <div class="col-md-6 m-auto">
+      <label for="sexo" class="form-label">Sexo</label>
+      <select class="form-select form-select-sm  bg-black text-white" aria-label=".form-select-sm example">
+        <option selected>Selecciona tu sexo</option>
+        <option value="1">Mujer</option>
+        <option value="2">Hombre</option>
+      </select>
+   </div>
 
+    <div class="col-md-12 m-auto">
+      <label for="comentario" class="form-label ">¿Qué te parece nuestro contenido?</label>
+      <textarea class="form-control bg-black text-white" id="comentario" rows="3"></textarea>
+    </div>
+    </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 <!--pie de pagina-->
 <footer class="footer">
   <div >
-    <img src="../assets/Multimedia/lyg grande.png" alt="" class="logo-footer">
+    <img src="../assets/Multimedia/lyg vino grande.png" alt="" class="logo-footer">
   </div>
   <div class=" wow animate__animated animate__pulse">
     <h3>"Los mejores regalos vienen del corazón"</h3>

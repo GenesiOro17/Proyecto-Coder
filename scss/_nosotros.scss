@@ -1,0 +1,45 @@
+/* QUIENES SOMOS */
+.sec1 {
+  display: flex;
+  text-align: center;
+  margin: 2rem 4rem;
+  justify-content: space-around;
+}
+.nosotros {
+  width: 40%;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  padding: 1rem;
+}
+.imagenes2 {
+  width: 500px;
+  height: 250px;
+}
+
+/* QUE NOS DIFERENCIA */
+.sec2 {
+  display: block;
+  justify-content: center;
+  background-color: #d8b6a4;
+  height: 430px;
+  padding: 1rem;
+  margin: 20px auto;
+}
+.diferencias {
+  display: flex;
+  justify-content: space-around;
+  margin: 0rem;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  color: #000000;
+  font-size: 2rem;
+
+  animation-duration: 2s;
+  img {
+    width: 150px;
+    height: 150px;
+    border: none;
+    padding-top: 30px;
+  }
+}

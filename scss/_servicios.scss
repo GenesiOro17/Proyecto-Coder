@@ -1,0 +1,86 @@
+/* SERVICIOS */
+.fondo-servicios {
+  background: linear-gradient(#f8dede, #f0e4de, #f8dede);
+}
+.servicios {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 50% 30%;
+  grid-template-rows: repeat (4, 1fr 2fr);
+  grid-template-areas:
+    "titulo1 titulo1"
+    "parrafo1 img1"
+    "titulo3 titulo3"
+    "parrafo3 img3"
+    "titulo4 titulo4"
+    "parrafo4 img4"
+    "titulo5 titulo5"
+    "parrafo5 img5";
+  gap: 20px;
+  justify-content: center;
+  text-align: start;
+
+  .titulo1 {
+    grid-area: titulo1;
+    margin-top: 20px;
+  }
+  .parrafo1 {
+    grid-area: parrafo1;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .titulo2 {
+    grid-area: titulo2;
+    margin-top: 20px;
+  }
+  .parrafo2 {
+    grid-area: parrafo2;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+
+  .titulo3 {
+    grid-area: titulo3;
+    margin-top: 20px;
+  }
+  .parrafo3 {
+    grid-area: parrafo3;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+
+  .titulo4 {
+    grid-area: titulo4;
+    margin-top: 20px;
+  }
+
+  .parrafo4 {
+    grid-area: parrafo4;
+  }
+
+  .img4 {
+    grid-area: img4;
+  }
+  .titulo5 {
+    grid-area: titulo5;
+  }
+
+  .parrafo5 {
+    grid-area: parrafo5;
+  }
+
+  .img5 {
+    grid-area: img5;
+  }
+  img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+
+    transition: 1s ease;
+  }
+}
