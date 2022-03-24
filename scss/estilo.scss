@@ -1,5 +1,10 @@
+$vino: #771212;
+$violeta: #d8b6a4;
+$blanco: #ffffff;
+$rosa: #f8dede;
+
 @import "fuentes";
-@import "navegacion";
+@import "nav";
 @import "nosotros";
 @import "trabajos";
 @import "servicios";
@@ -15,7 +20,7 @@
 body {
   font-family: "Zen Kaku Gothic New", sans-serif;
   text-align: center;
-  background-color: #ffffff;
+  background-color: $blanco;
 }
 
 /* ENCABEZADO */
@@ -25,19 +30,29 @@ main {
     height: 40%;
   }
   .nombre {
-    background-color: #771212;
+    background-color: $vino;
     margin: 0;
 
     h1 {
       color: #ffff;
     }
   }
+  .slide2 {
+    display: none;
+  }
+  @media screen and (max-width: 550px) {
+    .slide1 {
+      display: none;
+    }
+    .slide2 {
+      display: block;
+    }
+  }
 }
-
 /* FOOTER */
 footer {
   display: flex;
-  background-color: #771212;
+  background-color: $vino;
   justify-content: space-between;
   height: auto;
   margin-top: 7rem;

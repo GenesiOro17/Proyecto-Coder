@@ -349,7 +349,8 @@ nav ul ul {
 /* CONTACTO */
 .fondo {
   background-color: black;
-  background-image: url(https://cdn.pixabay.com/photo/2019/12/03/07/34/gift-4669449_960_720.jpg);
+  background-image: url("../assets/Multimedia/fondo contacto3.png");
+  background-repeat: repeat;
 }
 
 .fondo form {
@@ -603,9 +604,9 @@ nav ul ul {
   .nombre {
     height: 50%;
   }
-  .titulo {
-    height: 60%;
+  main .titulo {
     width: 100%;
+    height: 80%;
   }
   /* QUIENES SOMOS */
   .sec1 {
@@ -618,6 +619,9 @@ nav ul ul {
             flex-direction: column;
     text-align: center;
     margin: 20px;
+  }
+  .sec2 {
+    background-color: #f8dede;
   }
   .nosotros {
     width: 100%;
@@ -722,6 +726,19 @@ main .nombre {
 
 main .nombre h1 {
   color: #ffff;
+}
+
+main .slide2 {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  main .slide1 {
+    display: none;
+  }
+  main .slide2 {
+    display: block;
+  }
 }
 
 /* FOOTER */
