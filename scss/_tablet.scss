@@ -155,19 +155,4 @@
   .contacto h3 {
     font-size: 20px;
   }
-
-  .input {
-    display: grid;
-    grid-template-columns: repeat (2, 50%);
-    grid-template-rows: 25px;
-    grid-template-areas: "enviar borrar";
-    table-layout: fixed;
-    justify-items: center;
-  }
-  .enviar {
-    grid-area: enviar;
-  }
-  .borrar {
-    grid-area: borrar;
-  }
 }

@@ -360,6 +360,23 @@ nav ul ul {
   font-size: 23px;
 }
 
+@media screen and (max-width: 500px) {
+  .fondo .botones {
+    margin: 20px auto;
+  }
+  .fondo .botones .borrar,
+  .fondo .botones .enviar {
+    padding: 5px 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .fondo .borrar,
+  .fondo .enviar {
+    padding: 5px 50px;
+  }
+}
+
 /*****************MEDIA QUERRIES TABLET**************************/
 @media screen and (max-width: 1100px) {
   /* FUENTES */
@@ -541,27 +558,6 @@ nav ul ul {
   }
   .contacto h3 {
     font-size: 20px;
-  }
-  .input {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: repeat 2, 50%;
-        grid-template-columns: repeat 2, 50%;
-    -ms-grid-rows: 25px;
-        grid-template-rows: 25px;
-        grid-template-areas: "enviar borrar";
-    table-layout: fixed;
-    justify-items: center;
-  }
-  .enviar {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: enviar;
-  }
-  .borrar {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: borrar;
   }
 }
 
