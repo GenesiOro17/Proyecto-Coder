@@ -37,6 +37,21 @@ nav {
 
 nav .nav1 {
   grid-area: nav1;
+  position: relative;
+}
+
+nav .nav1:after {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  content: "";
+  background: #3a3939;
+  border-radius: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 nav .nav1:hover {

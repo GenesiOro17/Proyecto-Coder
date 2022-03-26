@@ -3,6 +3,19 @@ $violeta: #d8b6a4;
 $blanco: #ffffff;
 $rosa: #f8dede;
 
+@mixin sombra($color: #3a3939) {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  filter: blur(10px);
+  content: "";
+  background: $color;
+  border-radius: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 @import "fuentes";
 @import "nav";
 @import "nosotros";
