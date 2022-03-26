@@ -64,24 +64,35 @@ main {
 }
 /* FOOTER */
 footer {
-  display: flex;
   background-color: $vino;
-  justify-content: space-between;
   height: auto;
   margin-top: 7rem;
+  padding: 20px;
   img {
-    width: 60px;
+    width: 30px;
     margin: 1rem 1rem;
   }
   h3 {
     color: #ffffff;
     margin-top: 30px;
   }
-  .logo-footer:hover {
-    animation-name: izquierda;
-    position: relative;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  .footerNosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .logo-footer {
+    width: 80px;
+    &:hover {
+      animation-name: izquierda;
+      position: relative;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    &:after {
+      @include sombra(#000000dd);
+    }
   }
 }

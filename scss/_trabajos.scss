@@ -6,16 +6,17 @@
   justify-content: center;
   padding: 2rem;
 }
-.trabajos img {
-  width: 300px;
-  height: 400px;
-  margin: 1.8rem;
-  opacity: 0.8;
-  border-radius: 20px;
+.trabajos {
+  img {
+    width: 300px;
+    height: 400px;
+    margin: 1.8rem;
+    border-radius: 20px;
 
-  &:hover {
-    opacity: 2;
-    border: solid white;
-    transform: scale(1.2);
+    &:hover {
+      opacity: 2;
+      border: solid white;
+      transform: scale(1.2);
+    }
   }
 }
