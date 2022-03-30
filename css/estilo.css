@@ -189,6 +189,14 @@ h2 {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .nosotros {
+    background: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(2%, white), color-stop(39%, #fff1e1));
+    background: linear-gradient(90deg, white 2%, #fff1e1 39%);
+  }
+}
+
 .imagenes2 {
   width: 500px;
   height: 250px;
@@ -266,6 +274,14 @@ h2 {
   background: linear-gradient(90deg, white 2%, bisque 39%);
 }
 
+@media screen and (max-width: 1100px) {
+  .fondo-servicios .fondo-servicios {
+    background: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(2%, white), color-stop(39%, #fff1e1));
+    background: linear-gradient(90deg, white 2%, #fff1e1 39%);
+  }
+}
+
 .servicios {
   width: 90%;
   margin: 20px auto;
@@ -309,6 +325,13 @@ h2 {
   height: 250px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+}
+
+@media screen and (max-width: 550px) {
+  .servicios .img1 img {
+    width: 80%;
+    height: 40%;
+  }
 }
 
 .servicios .titulo3 {
@@ -358,6 +381,13 @@ h2 {
   height: 250px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
+}
+
+@media screen and (max-width: 550px) {
+  .servicios .img4 img {
+    width: 80%;
+    height: 40%;
+  }
 }
 
 .servicios .titulo5 {
@@ -700,33 +730,6 @@ h2 {
     font-size: 2rem;
   }
   /* SERVICIOS */
-  table {
-    width: 100%;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem;
-    border-collapse: separate;
-    border-spacing: 10px;
-  }
-  .ser2 {
-    background: #fdfdfd;
-    padding: 6px 5%;
-    text-align: center;
-  }
-  .ser2 h3 {
-    margin-right: 10px;
-  }
-  td img {
-    margin-left: 0;
-    -webkit-transition: none;
-    transition: none;
-  }
-  td img:hover {
-    width: 150px;
-    height: 120px;
-  }
 }
 
 /*****************FINAL MEDIA QUERRIES MOBILE**********************/
@@ -854,5 +857,11 @@ footer .footerNosotros {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 6px;
+}
+
+@media screen and (max-width: 1100px) {
+  footer .fraseLogo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

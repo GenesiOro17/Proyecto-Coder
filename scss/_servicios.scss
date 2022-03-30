@@ -6,6 +6,16 @@
     rgba(255, 255, 255, 1) 2%,
     rgba(255, 228, 196, 1) 39%
   );
+  @media screen and (max-width: 1100px) {
+    .fondo-servicios {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 2%,
+        rgba(255, 241, 225, 1) 39%
+      );
+    }
+  }
 }
 .servicios {
   width: 90%;
@@ -43,6 +53,10 @@
       width: 400px;
       height: 250px;
       transition: 1s ease;
+      @media screen and (max-width: 550px) {
+        width: 80%;
+        height: 40%;
+      }
     }
   }
   // .titulo2 {
@@ -82,6 +96,10 @@
       width: 400px;
       height: 250px;
       transition: 1s ease;
+      @media screen and (max-width: 550px) {
+        width: 80%;
+        height: 40%;
+      }
     }
   }
   .titulo5 {

@@ -22,6 +22,14 @@ h2 {
   );
   padding: 2%;
   border-radius: 10px;
+  @media screen and (max-width: 550px) {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 2%,
+      rgba(255, 241, 225, 1) 39%
+    );
+  }
 }
 .imagenes2 {
   width: 500px;

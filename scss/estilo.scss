@@ -116,4 +116,9 @@ footer {
     gap: 6px;
     @extend .formulario;
   }
+  @media screen and (max-width: 1100px) {
+    .fraseLogo {
+      display: none;
+    }
+  }
 }
