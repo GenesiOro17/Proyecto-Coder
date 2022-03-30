@@ -9,13 +9,24 @@
     padding: 3%;
     font-family: "Caveat", cursive;
     font-size: 23px;
+    label {
+      padding-top: 3%;
+    }
   }
   @media screen and (max-width: 500px) {
-    .botones {
-      margin: 20px auto;
-      .borrar,
-      .enviar {
-        padding: 5px 30px;
+    .contacto {
+      h1 {
+        font-size: 40px;
+      }
+      form {
+        margin: 5px;
+        .botones {
+          margin: 20px auto;
+          .borrar,
+          .enviar {
+            padding: 5px 30px;
+          }
+        }
       }
     }
   }

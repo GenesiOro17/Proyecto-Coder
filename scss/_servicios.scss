@@ -1,25 +1,34 @@
 /* SERVICIOS */
 .fondo-servicios {
-  background: linear-gradient(#f8dede, #f0e4de, #f8dede);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 2%,
+    rgba(255, 228, 196, 1) 39%
+  );
 }
 .servicios {
   width: 90%;
   margin: 20px auto;
+
   display: grid;
   grid-template-columns: 50% 30%;
-  grid-template-rows: repeat (4, 1fr 2fr);
+  grid-template-rows: repeat (5, 1fr 2fr);
   grid-template-areas:
     "titulo1 titulo1"
     "parrafo1 img1"
     "titulo3 titulo3"
-    "parrafo3 img3"
+    "parrafo3 parrafo3"
+    "img3 img3"
     "titulo4 titulo4"
     "parrafo4 img4"
     "titulo5 titulo5"
-    "parrafo5 img5";
-  gap: 20px;
+    "parrafo5 parrafo5";
+
   justify-content: center;
   text-align: start;
+  gap: 25px;
+  padding-bottom: 20%;
 
   .titulo1 {
     grid-area: titulo1;
@@ -30,17 +39,22 @@
   }
   .img1 {
     grid-area: img1;
+    img {
+      width: 400px;
+      height: 250px;
+      transition: 1s ease;
+    }
   }
-  .titulo2 {
-    grid-area: titulo2;
-    margin-top: 20px;
-  }
-  .parrafo2 {
-    grid-area: parrafo2;
-  }
-  .img2 {
-    grid-area: img2;
-  }
+  // .titulo2 {
+  //   grid-area: titulo2;
+  //   margin-top: 20px;
+  // }
+  // .parrafo2 {
+  //   grid-area: parrafo2;
+  // }
+  // .img2 {
+  //   grid-area: img2;
+  // }
 
   .titulo3 {
     grid-area: titulo3;
@@ -64,6 +78,11 @@
 
   .img4 {
     grid-area: img4;
+    img {
+      width: 400px;
+      height: 250px;
+      transition: 1s ease;
+    }
   }
   .titulo5 {
     grid-area: titulo5;
@@ -75,12 +94,7 @@
 
   .img5 {
     grid-area: img5;
-  }
-  img {
-    width: 400px;
-    height: 300px;
-    border-radius: 10%;
-
-    transition: 1s ease;
+    width: auto;
+    height: auto;
   }
 }

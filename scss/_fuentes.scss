@@ -1,4 +1,7 @@
 /* FUENTES */
+.navbar {
+  font-size: 17px;
+}
 h1 {
   font-family: "Caveat", cursive;
   font-size: 6rem;
@@ -22,9 +25,11 @@ h4 {
   font-weight: bold;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
+  text-decoration: underline;
 }
 p {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Work Sans", sans-serif;
   line-height: 1.5;
+  font-weight: 500;
 }
 /* CIERRE DE FUENTES */

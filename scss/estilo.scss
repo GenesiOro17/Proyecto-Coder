@@ -31,7 +31,7 @@ $rosa: #f8dede;
   box-sizing: border-box;
 }
 body {
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   background-color: $blanco;
 }
@@ -66,24 +66,31 @@ main {
 footer {
   background-color: $vino;
   height: auto;
-  margin-top: 7rem;
-  padding: 20px;
+  margin-top: 10%;
+  padding-top: 3%;
+  text-align: center;
+  justify-content: space-around;
   img {
     width: 30px;
-    margin: 1rem 1rem;
+    margin: 15px;
   }
   h3 {
     color: #ffffff;
-    margin-top: 30px;
+    font-size: 30px;
   }
-  .footerNosotros {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+
+  .formulario {
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $violeta;
+      }
+    }
   }
 
   .logo-footer {
-    width: 80px;
+    width: 140px;
     &:hover {
       animation-name: izquierda;
       position: relative;
@@ -94,5 +101,19 @@ footer {
     &:after {
       @include sombra(#000000dd);
     }
+  }
+  .numero {
+    display: flex;
+    justify-content: center;
+    p {
+      margin-top: 18px;
+      color: white;
+    }
+  }
+  .footerNosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    @extend .formulario;
   }
 }

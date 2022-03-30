@@ -2,15 +2,26 @@
 .sec1 {
   display: flex;
   text-align: center;
-  margin: 2rem 4rem;
   justify-content: space-around;
+  margin: 6% 5%;
+  margin-bottom: 8%;
+}
+h2 {
+  margin-top: 3%;
 }
 .nosotros {
   width: 40%;
-  color: white;
-  text-align: center;
-  background-color: #000000;
-  padding: 1rem;
+  color: #000000;
+  text-align: start;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 2%,
+    rgba(255, 228, 196, 1) 39%
+  );
+  padding: 2%;
+  border-radius: 10px;
 }
 .imagenes2 {
   width: 500px;
@@ -21,14 +32,15 @@
 .sec2 {
   display: block;
   justify-content: center;
+
   background-color: #d8b6a4;
-  height: 430px;
-  padding: 1rem;
-  margin: 20px auto;
+  padding: 1%;
+  padding-bottom: 4%;
 }
 .diferencias {
   display: flex;
   justify-content: space-around;
+  padding: 4%;
   margin: 0rem;
   text-align: center;
   font-family: "Caveat", cursive;
