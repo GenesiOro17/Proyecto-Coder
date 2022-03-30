@@ -39,6 +39,12 @@ p {
   font-weight: 500;
 }
 
+@media screen and (max-width: 550px) {
+  p {
+    font-weight: 300;
+  }
+}
+
 /* CIERRE DE FUENTES */
 /* BARRA DE NAVEGACION */
 nav {
@@ -619,8 +625,7 @@ h2 {
   .servicios h3 {
     padding-top: 30px;
   }
-  /* CONTACTO */
-  form div {
+  .img4 div, .img form div {
     margin: 40px;
     font-family: "Caveat", cursive;
     font-size: 1.2rem;
