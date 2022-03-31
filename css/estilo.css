@@ -328,7 +328,7 @@ h2 {
 
 .servicios .img1 img {
   width: 400px;
-  height: 250px;
+  height: 350px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -384,7 +384,7 @@ h2 {
 
 .servicios .img4 img {
   width: 400px;
-  height: 250px;
+  height: 350px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -868,5 +868,10 @@ footer .footerNosotros {
   footer .fraseLogo {
     display: none;
   }
+}
+
+footer .logos:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=estilo.css.map */
