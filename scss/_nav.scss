@@ -4,12 +4,23 @@ nav {
   color: #c63637;
   position: fixed;
   z-index: 100;
+  height: auto;
 
   .nav1 {
     grid-area: nav1;
     position: relative;
     &:after {
       @include sombra;
+    }
+    @media screen and(max-width: 550px) {
+      width: 40px;
+      &:after {
+        display: none;
+      }
+      
+    }
+    @media screen and(max-width: 290px){
+      width: 30px;
     }
   }
   .nav1:hover {

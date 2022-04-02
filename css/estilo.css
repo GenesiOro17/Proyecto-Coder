@@ -52,6 +52,7 @@ nav {
   color: #c63637;
   position: fixed;
   z-index: 100;
+  height: auto;
 }
 
 nav .nav1 {
@@ -71,6 +72,21 @@ nav .nav1:after {
   z-index: -1;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  nav .nav1 {
+    width: 40px;
+  }
+  nav .nav1:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  nav .nav1 {
+    width: 30px;
+  }
 }
 
 nav .nav1:hover {
@@ -297,19 +313,18 @@ h2 {
       grid-template-columns: 50% 30%;
   -ms-grid-rows: repeat 5, 1fr 2fr;
       grid-template-rows: repeat 5, 1fr 2fr;
-      grid-template-areas: "titulo1 titulo1" "parrafo1 img1" "titulo3 titulo3" "parrafo3 parrafo3" "img3 img3" "titulo4 titulo4" "parrafo4 img4" "titulo5 titulo5" "parrafo5 parrafo5";
+      grid-template-areas: "titulo1 img1" "parrafo1 img1" "titulo3 titulo3" "parrafo3 parrafo3" "img3 img3" "titulo4 img4" "parrafo4 img4" "titulo5 titulo5" "parrafo5 parrafo5";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: start;
-  gap: 25px;
+  gap: 20px;
   padding-bottom: 20%;
 }
 
 .servicios .titulo1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: titulo1;
   margin-top: 20px;
 }
@@ -321,12 +336,14 @@ h2 {
 }
 
 .servicios .img1 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: img1;
 }
 
 .servicios .img1 img {
+  margin-top: 10%;
   width: 400px;
   height: 350px;
   -webkit-transition: 1s ease;
@@ -365,7 +382,6 @@ h2 {
 .servicios .titulo4 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: titulo4;
   margin-top: 20px;
 }
@@ -377,12 +393,14 @@ h2 {
 }
 
 .servicios .img4 {
-  -ms-grid-row: 7;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: img4;
 }
 
 .servicios .img4 img {
+  margin-top: 20%;
   width: 400px;
   height: 350px;
   -webkit-transition: 1s ease;
@@ -419,7 +437,7 @@ h2 {
 /* CONTACTO */
 .fondo {
   background-color: black;
-  background-image: url("../assets/Multimedia/fondo contacto3.png");
+  background-image: url("../assets/Multimedia/fondo contacto3 (1).png");
   background-repeat: repeat;
 }
 
@@ -734,7 +752,6 @@ h2 {
   footer h3 {
     font-size: 2rem;
   }
-  /* SERVICIOS */
 }
 
 /*****************FINAL MEDIA QUERRIES MOBILE**********************/
@@ -752,14 +769,13 @@ body {
 }
 
 /* ENCABEZADO */
-main .titulo {
-  width: 100%;
-  height: 40%;
-}
-
 main .nombre {
   background-color: #771212;
-  margin: 0;
+  width: 100%;
+  height: 170px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .nombre h1 {
