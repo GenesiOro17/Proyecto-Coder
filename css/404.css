@@ -1,0 +1,12 @@
+header .error404 {
+  display: inline-block;
+}
+
+header .error404 h2 {
+  font-size: 200px;
+}
+
+header .error404 img {
+  width: 60%;
+}
+/*# sourceMappingURL=404.css.map */
