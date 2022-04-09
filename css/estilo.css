@@ -167,6 +167,7 @@ nav ul a {
   padding-top: 5px;
   padding-bottom: 5px;
   display: block;
+  font-weight: 600;
 }
 
 nav ul a:hover {
@@ -273,6 +274,10 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
+}
+
+.trabajos {
+  margin-bottom: 7%;
 }
 
 .trabajos img {
@@ -446,6 +451,7 @@ h2 {
   padding: 3%;
   font-family: "Caveat", cursive;
   font-size: 23px;
+  margin-bottom: 10%;
 }
 
 .fondo form label {
@@ -859,7 +865,6 @@ main .slide2 {
 footer {
   background-color: #771212;
   height: auto;
-  margin-top: 10%;
   padding-top: 3%;
   text-align: center;
   -ms-flex-pack: distribute;
