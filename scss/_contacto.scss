@@ -14,13 +14,24 @@
       padding-top: 3%;
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1100px) {
+    .borrar,
+    .enviar {
+      padding: 5px 50px;
+    }
+  }
+  @media screen and (max-width: 550px) {
     .contacto {
       h1 {
-        font-size: 40px;
+        
+        font-size: 50px;
+        @media screen and (max-width: 350px){
+          word-wrap: break-word;
+        }
       }
       form {
         margin: 5px;
+        margin-bottom: 30%;
         .botones {
           margin: 20px auto;
           .borrar,
@@ -31,10 +42,5 @@
       }
     }
   }
-  @media screen and (max-width: 1100px) {
-    .borrar,
-    .enviar {
-      padding: 5px 50px;
-    }
-  }
+  
 }

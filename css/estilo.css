@@ -458,12 +458,29 @@ h2 {
   padding-top: 3%;
 }
 
-@media screen and (max-width: 500px) {
-  .fondo .contacto h1 {
-    font-size: 40px;
+@media screen and (max-width: 1100px) {
+  .fondo .borrar,
+  .fondo .enviar {
+    padding: 5px 50px;
   }
+}
+
+@media screen and (max-width: 550px) {
+  .fondo .contacto h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-width: 350px) {
+  .fondo .contacto h1 {
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .fondo .contacto form {
     margin: 5px;
+    margin-bottom: 30%;
   }
   .fondo .contacto form .botones {
     margin: 20px auto;
@@ -471,13 +488,6 @@ h2 {
   .fondo .contacto form .botones .borrar,
   .fondo .contacto form .botones .enviar {
     padding: 5px 30px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .fondo .borrar,
-  .fondo .enviar {
-    padding: 5px 50px;
   }
 }
 
