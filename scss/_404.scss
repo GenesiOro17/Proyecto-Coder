@@ -1,5 +1,8 @@
 .body-error{
     background-color: $rosa;
+    display: flex; 
+    flex-wrap: wrap;
+   
     .gif{
         @media  screen and (max-width: 600px) {
             display: none;
@@ -7,10 +10,23 @@
         }
     }
     .error404{
+        width: 50%;
+    height: 35%;
+    padding: 2%;
+    justify-content: start;
+    color: black;
         @media screen and (max-width: 600px){
             width: 80%;
             height: 40%;
             justify-content: center;
+            text-align: center;
+            margin: 20px auto;
+            div{
+                img{
+                    width: 200px;
+                    margin-left: 5px;
+                }
+            }
         }
         h1{
             color: black;
@@ -24,6 +40,10 @@
     }
     .inicio{
         background-color: $violeta;
+        border-radius: 5px;
+        width: 50%;
+        height: 40%;
+        margin: 20px auto;
         @media screen and (max-width: 600px){
             width: 80%;
             height: 50%;
