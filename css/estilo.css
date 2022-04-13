@@ -177,6 +177,11 @@ nav ul ul {
 }
 
 /* QUIENES SOMOS */
+.sobreNosotros {
+  text-align: start;
+  margin-right: 10%;
+}
+
 .sec1 {
   display: -webkit-box;
   display: -ms-flexbox;
